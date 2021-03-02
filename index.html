@@ -2,9 +2,10 @@
 <html>
     <meta charset="utf-8">
     <title>Google</title>
+    <link rel="stylesheet" href="styles.css">
 </html>
 <body>
-    <header class="header">
+    <navbar class="header">
         <div id="left">
             <div id="about">About</div>
             <div id="store">Store</div>
@@ -14,19 +15,20 @@
             <div id="images">Images</div>
         </div>
 
-    </header>
+    </navbar>
+    <div class="content">
+        <a href="/index.html" id="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="Google"/></a><br/>
+        <form action="">
+            <input type="text" id="searchbar" name="search"><br/>
+            <div id="buttons">
+                <button type="submit" value="search" class="button" id="searchbtn">Google Search</button>
+                <button type="submit" value="lucky" class="button" id="lucky">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </div>
 
-    <a href="/index.html"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        alt="Google"/></a>
-    <form action="">
-        <input type="text" id="search" name="search"/>
-        <button type="submit" value="search" class="button" id="search">Google Search</button>
-        <button type="submit" value="lucky" class="button" id="lucky">I'm Feeling Lucky</button>
-    </form>
-
-    <footer class="footer">
-        <div id="location">CANADA</div>
-        <div id="foot">
+    <navbar class="footer">
             <div id="left">
                 <div id="advertising">Advertising</div>
                 <div id="business">Business</div>
@@ -37,7 +39,5 @@
                 <div id="terms">Terms</div>
                 <div id="settings">Settings</div>
             </div>
-
-        </div>
-    </footer>
+        </navbar>
 </body>
